@@ -1,0 +1,24 @@
+{
+  "name": "showB",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"rollup -c rollup.config.js",
+    "dev":"rollup -c rollup.config.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "5",
+    "@rollup/plugin-commonjs": "~29.0.0",
+    "@rollup/plugin-typescript": "~12.3.0"
+  },
+  "dependencies": {
+    "rollup": "~4.59.0"
+  }
+}
