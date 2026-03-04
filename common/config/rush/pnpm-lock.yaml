@@ -11,6 +11,13 @@ importers:
   .: {}
 
   ../../apps/showA:
+    dependencies:
+      qiankun:
+        specifier: ~2.10.16
+        version: 2.10.16
+      vue-router:
+        specifier: ~5.0.3
+        version: 5.0.3(@vue/compiler-sfc@3.5.29)(vue@3.2.13)
     devDependencies:
       '@babel/core':
         specifier: 7.22.5
@@ -35,7 +42,7 @@ importers:
         version: 3.2.13
       vue-loader:
         specifier: 17.2.2
-        version: 17.2.2(vue@3.2.13)(webpack@5.85.1)
+        version: 17.2.2(@vue/compiler-sfc@3.5.29)(vue@3.2.13)(webpack@5.85.1)
       webpack:
         specifier: 5.85.1
         version: 5.85.1(webpack-cli@5.1.3)
@@ -633,6 +640,10 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
+  '@babel/runtime@7.28.6':
+    resolution: {integrity: sha1-0mekPLGDbcTRgszpOudbqVTvbSs=, tarball: http://r.npm.sankuai.com/@babel/runtime/download/@babel/runtime-7.28.6.tgz}
+    engines: {node: '>=6.9.0'}
+
   '@babel/template@7.28.6':
     resolution: {integrity: sha1-Dn5W7O23iu72bOeXKwgvznaiPlc=, tarball: http://r.npm.sankuai.com/@babel/template/download/@babel/template-7.28.6.tgz}
     engines: {node: '>=6.9.0'}
@@ -651,6 +662,9 @@ packages:
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha1-Y0Khn0Q0dRjJPkOxrGnes8Rlah8=, tarball: http://r.npm.sankuai.com/@jridgewell/gen-mapping/download/@jridgewell/gen-mapping-0.3.13.tgz}
+
+  '@jridgewell/remapping@2.3.5':
+    resolution: {integrity: sha1-N1xHbRlylHhRuh4Vro8SMEdEWqE=, tarball: http://r.npm.sankuai.com/@jridgewell/remapping/download/@jridgewell/remapping-2.3.5.tgz}
 
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha1-eg7mAfYPmaIMfHxf8MgDiMEYm9Y=, tarball: http://r.npm.sankuai.com/@jridgewell/resolve-uri/download/@jridgewell/resolve-uri-3.1.2.tgz}
@@ -1067,17 +1081,47 @@ packages:
   '@types/ws@8.18.1':
     resolution: {integrity: sha1-SEZOS/Ld/RfbE9hFRn9gcP/qSqk=, tarball: http://r.npm.sankuai.com/@types/ws/download/@types/ws-8.18.1.tgz}
 
+  '@vue-macros/common@3.1.2':
+    resolution: {integrity: sha1-a19x6iGXMvyVX9z7FalaQXuHoP4=, tarball: http://r.npm.sankuai.com/@vue-macros/common/download/@vue-macros/common-3.1.2.tgz}
+    engines: {node: '>=20.19.0'}
+    peerDependencies:
+      vue: ^2.7.0 || ^3.2.25
+    peerDependenciesMeta:
+      vue:
+        optional: true
+
   '@vue/compiler-core@3.2.13':
     resolution: {integrity: sha1-kBJoCIuYpTxDvg8Cv6Djo4mta/Q=, tarball: http://r.npm.sankuai.com/@vue/compiler-core/download/@vue/compiler-core-3.2.13.tgz}
+
+  '@vue/compiler-core@3.5.29':
+    resolution: {integrity: sha1-P7cGMMYqLnFe7dw8Kkj0aqRQetw=, tarball: http://r.npm.sankuai.com/@vue/compiler-core/download/@vue/compiler-core-3.5.29.tgz}
 
   '@vue/compiler-dom@3.2.13':
     resolution: {integrity: sha1-AomCSU+52XgH1SdbQjVXMmhvjtc=, tarball: http://r.npm.sankuai.com/@vue/compiler-dom/download/@vue/compiler-dom-3.2.13.tgz}
 
+  '@vue/compiler-dom@3.5.29':
+    resolution: {integrity: sha1-BVz1SSAFJJWRx/tFhoqHRGjk/7M=, tarball: http://r.npm.sankuai.com/@vue/compiler-dom/download/@vue/compiler-dom-3.5.29.tgz}
+
   '@vue/compiler-sfc@3.2.13':
     resolution: {integrity: sha1-o4R1BIqtnJbPBN/mNRKbQX4PkpU=, tarball: http://r.npm.sankuai.com/@vue/compiler-sfc/download/@vue/compiler-sfc-3.2.13.tgz}
 
+  '@vue/compiler-sfc@3.5.29':
+    resolution: {integrity: sha1-ixsHB/tTwSL+3VZiRKVk6vQO5x8=, tarball: http://r.npm.sankuai.com/@vue/compiler-sfc/download/@vue/compiler-sfc-3.5.29.tgz}
+
   '@vue/compiler-ssr@3.2.13':
     resolution: {integrity: sha1-mENGcuC0iMKv+ksFcHMda+XNoYc=, tarball: http://r.npm.sankuai.com/@vue/compiler-ssr/download/@vue/compiler-ssr-3.2.13.tgz}
+
+  '@vue/compiler-ssr@3.5.29':
+    resolution: {integrity: sha1-g6woyGAnG9HJgi0TWseMOIQD+Uk=, tarball: http://r.npm.sankuai.com/@vue/compiler-ssr/download/@vue/compiler-ssr-3.5.29.tgz}
+
+  '@vue/devtools-api@8.0.6':
+    resolution: {integrity: sha1-gIxxSCEwV7rJYfYnTpNRFfEBpns=, tarball: http://r.npm.sankuai.com/@vue/devtools-api/download/@vue/devtools-api-8.0.6.tgz}
+
+  '@vue/devtools-kit@8.0.7':
+    resolution: {integrity: sha1-u41Lg48Qol3sjrcotKO9VgvwXlU=, tarball: http://r.npm.sankuai.com/@vue/devtools-kit/download/@vue/devtools-kit-8.0.7.tgz}
+
+  '@vue/devtools-shared@8.0.7':
+    resolution: {integrity: sha1-ozCGAi6ijwTiLg/TCDslbCBfny0=, tarball: http://r.npm.sankuai.com/@vue/devtools-shared/download/@vue/devtools-shared-8.0.7.tgz}
 
   '@vue/reactivity@3.2.13':
     resolution: {integrity: sha1-0mmwmqr+8GqRvz65je/UGiw9r1Q=, tarball: http://r.npm.sankuai.com/@vue/reactivity/download/@vue/reactivity-3.2.13.tgz}
@@ -1098,6 +1142,9 @@ packages:
 
   '@vue/shared@3.2.13':
     resolution: {integrity: sha1-yDDvlm168SWY4OqGKlVpXqWJzUc=, tarball: http://r.npm.sankuai.com/@vue/shared/download/@vue/shared-3.2.13.tgz}
+
+  '@vue/shared@3.5.29':
+    resolution: {integrity: sha1-D+DXY3sFWZ1WyljYOnfGN6F3QRA=, tarball: http://r.npm.sankuai.com/@vue/shared/download/@vue/shared-3.5.29.tgz}
 
   '@webassemblyjs/ast@1.14.1':
     resolution: {integrity: sha1-qfagfysDyVyNOMRTah/ftSH/VbY=, tarball: http://r.npm.sankuai.com/@webassemblyjs/ast/download/@webassemblyjs/ast-1.14.1.tgz}
@@ -1232,6 +1279,14 @@ packages:
     resolution: {integrity: sha1-FfHy9Z5g+A1bQ+8UBHopSpafgk8=, tarball: http://r.npm.sankuai.com/asn1js/download/asn1js-3.0.7.tgz}
     engines: {node: '>=12.0.0'}
 
+  ast-kit@2.2.0:
+    resolution: {integrity: sha1-bZopis7+9b38Wg+lHZTRM07y5nE=, tarball: http://r.npm.sankuai.com/ast-kit/download/ast-kit-2.2.0.tgz}
+    engines: {node: '>=20.19.0'}
+
+  ast-walker-scope@0.8.3:
+    resolution: {integrity: sha1-9RbEJmnzt34Uc6eOXp08Wy58Ho4=, tarball: http://r.npm.sankuai.com/ast-walker-scope/download/ast-walker-scope-0.8.3.tgz}
+    engines: {node: '>=20.19.0'}
+
   babel-loader@9.1.2:
     resolution: {integrity: sha1-oWoIDeUtCIVO4UVwRpkFpfwA05w=, tarball: http://r.npm.sankuai.com/babel-loader/download/babel-loader-9.1.2.tgz}
     engines: {node: '>= 14.15.0'}
@@ -1265,6 +1320,9 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha1-9uFKl4WNMnJSIAJC1Mz+UixEVSI=, tarball: http://r.npm.sankuai.com/binary-extensions/download/binary-extensions-2.3.0.tgz}
     engines: {node: '>=8'}
+
+  birpc@2.9.0:
+    resolution: {integrity: sha1-tZVQiX5M2WoiPipsFHW1ciNu0UU=, tarball: http://r.npm.sankuai.com/birpc/download/birpc-2.9.0.tgz}
 
   body-parser@1.20.4:
     resolution: {integrity: sha1-+OIPTQbKilCnHtMpwV3MrRzcVH8=, tarball: http://r.npm.sankuai.com/body-parser/download/body-parser-1.20.4.tgz}
@@ -1322,6 +1380,10 @@ packages:
     resolution: {integrity: sha1-GXxsxmnvKo3F57TZfuTgksPrDVs=, tarball: http://r.npm.sankuai.com/chokidar/download/chokidar-3.6.0.tgz}
     engines: {node: '>= 8.10.0'}
 
+  chokidar@5.0.0:
+    resolution: {integrity: sha1-lJwSapI4qAeSvpoCZZNPCYrzaaU=, tarball: http://r.npm.sankuai.com/chokidar/download/chokidar-5.0.0.tgz}
+    engines: {node: '>= 20.19.0'}
+
   chrome-trace-event@1.0.4:
     resolution: {integrity: sha1-Bb/9f/koRlCTMUcIyTvfqb0fD1s=, tarball: http://r.npm.sankuai.com/chrome-trace-event/download/chrome-trace-event-1.0.4.tgz}
     engines: {node: '>=6.0'}
@@ -1365,6 +1427,12 @@ packages:
   compression@1.8.1:
     resolution: {integrity: sha1-SkXZCawWUJGVqaKL2RCUiJwYDXk=, tarball: http://r.npm.sankuai.com/compression/download/compression-1.8.1.tgz}
     engines: {node: '>= 0.8.0'}
+
+  confbox@0.1.8:
+    resolution: {integrity: sha1-gg1z07PILZvZEGUsXU1Znvj/iwY=, tarball: http://r.npm.sankuai.com/confbox/download/confbox-0.1.8.tgz}
+
+  confbox@0.2.4:
+    resolution: {integrity: sha1-WS575x+IKkqHTjyI8Kwe9vfaHOU=, tarball: http://r.npm.sankuai.com/confbox/download/confbox-0.2.4.tgz}
 
   connect-history-api-fallback@2.0.0:
     resolution: {integrity: sha1-ZHJkhFJRoNryW5fOh4NMrOD18cg=, tarball: http://r.npm.sankuai.com/connect-history-api-fallback/download/connect-history-api-fallback-2.0.0.tgz}
@@ -1491,6 +1559,10 @@ packages:
   entities@2.2.0:
     resolution: {integrity: sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=, tarball: http://r.npm.sankuai.com/entities/download/entities-2.2.0.tgz}
 
+  entities@7.0.1:
+    resolution: {integrity: sha1-JuioiInbY0F9y5oeeaPxvJK1l2s=, tarball: http://r.npm.sankuai.com/entities/download/entities-7.0.1.tgz}
+    engines: {node: '>=0.12'}
+
   envinfo@7.21.0:
     resolution: {integrity: sha1-BKJRvnn5JUhUHzfRPItvIpQMO64=, tarball: http://r.npm.sankuai.com/envinfo/download/envinfo-7.21.0.tgz}
     engines: {node: '>=4'}
@@ -1555,6 +1627,9 @@ packages:
   express@4.22.1:
     resolution: {integrity: sha1-HeI6CXRaT//bOSR7NEu16v84IGk=, tarball: http://r.npm.sankuai.com/express/download/express-4.22.1.tgz}
     engines: {node: '>= 0.10.0'}
+
+  exsolve@1.0.8:
+    resolution: {integrity: sha1-f1402mHNERbe2lE25iKSwJb1BhM=, tarball: http://r.npm.sankuai.com/exsolve/download/exsolve-1.0.8.tgz}
 
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=, tarball: http://r.npm.sankuai.com/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz}
@@ -1681,6 +1756,9 @@ packages:
     resolution: {integrity: sha1-hK5l+n6vsWX922FWauFLrwVmTw8=, tarball: http://r.npm.sankuai.com/he/download/he-1.2.0.tgz}
     hasBin: true
 
+  hookable@5.5.3:
+    resolution: {integrity: sha1-bPw1iYSh75keJRjLntSneLvTIV0=, tarball: http://r.npm.sankuai.com/hookable/download/hookable-5.5.3.tgz}
+
   hpack.js@2.1.6:
     resolution: {integrity: sha1-h3dMCUnlE/QuhFdbPEVoH63ioLI=, tarball: http://r.npm.sankuai.com/hpack.js/download/hpack.js-2.1.6.tgz}
 
@@ -1738,6 +1816,9 @@ packages:
   iconv-lite@0.4.24:
     resolution: {integrity: sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=, tarball: http://r.npm.sankuai.com/iconv-lite/download/iconv-lite-0.4.24.tgz}
     engines: {node: '>=0.10.0'}
+
+  import-html-entry@1.17.0:
+    resolution: {integrity: sha1-ZSEXebTr9aJSADCL8MvG+DHV5OE=, tarball: http://r.npm.sankuai.com/import-html-entry/download/import-html-entry-1.17.0.tgz}
 
   import-local@3.2.0:
     resolution: {integrity: sha1-w9XHRXmMAqb4uJdyarpRABhu4mA=, tarball: http://r.npm.sankuai.com/import-local/download/import-local-3.2.0.tgz}
@@ -1855,6 +1936,10 @@ packages:
     resolution: {integrity: sha1-bHbtKbDMzprzeSCCmfB/h23nN+M=, tarball: http://r.npm.sankuai.com/loader-runner/download/loader-runner-4.3.1.tgz}
     engines: {node: '>=6.11.5'}
 
+  local-pkg@1.1.2:
+    resolution: {integrity: sha1-wD0gh4cSZEUwP4FhYZ3HAa+kq7U=, tarball: http://r.npm.sankuai.com/local-pkg/download/local-pkg-1.1.2.tgz}
+    engines: {node: '>=14'}
+
   locate-path@5.0.0:
     resolution: {integrity: sha1-Gvujlq/WdqbUJQTQpno6frn2KqA=, tarball: http://r.npm.sankuai.com/locate-path/download/locate-path-5.0.0.tgz}
     engines: {node: '>=8'}
@@ -1870,6 +1955,10 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha1-HaJ+ZxAnGUdpXa9oSOhH8B2EuSA=, tarball: http://r.npm.sankuai.com/lru-cache/download/lru-cache-5.1.1.tgz}
+
+  magic-string-ast@1.0.3:
+    resolution: {integrity: sha1-Ue94Mv1ccKAYj7lGJ8qjuMdP+b8=, tarball: http://r.npm.sankuai.com/magic-string-ast/download/magic-string-ast-1.0.3.tgz}
+    engines: {node: '>=20.19.0'}
 
   magic-string@0.25.9:
     resolution: {integrity: sha1-3n+fr5HvihyR0CwuUxTIJ3283Rw=, tarball: http://r.npm.sankuai.com/magic-string/download/magic-string-0.25.9.tgz}
@@ -1930,11 +2019,17 @@ packages:
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha1-LhlN4ERibUoQ5/f7wAznPoPk1cc=, tarball: http://r.npm.sankuai.com/minimalistic-assert/download/minimalistic-assert-1.0.1.tgz}
 
+  mlly@1.8.0:
+    resolution: {integrity: sha1-4HRhK5OK+Ouh6vQymcvInLctgk4=, tarball: http://r.npm.sankuai.com/mlly/download/mlly-1.8.0.tgz}
+
   ms@2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=, tarball: http://r.npm.sankuai.com/ms/download/ms-2.0.0.tgz}
 
   ms@2.1.3:
     resolution: {integrity: sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=, tarball: http://r.npm.sankuai.com/ms/download/ms-2.1.3.tgz}
+
+  muggle-string@0.4.1:
+    resolution: {integrity: sha1-OzZr1Dsy+AncIGWVNN0w58ig0yg=, tarball: http://r.npm.sankuai.com/muggle-string/download/muggle-string-0.4.1.tgz}
 
   multicast-dns@7.2.5:
     resolution: {integrity: sha1-d+tGBX9NetvRbZKQ+nKZ9vpkzO0=, tarball: http://r.npm.sankuai.com/multicast-dns/download/multicast-dns-7.2.5.tgz}
@@ -2028,6 +2123,12 @@ packages:
   path-to-regexp@0.1.12:
     resolution: {integrity: sha1-1eGhLkeKl21DLvPFjVNLmSMWS7c=, tarball: http://r.npm.sankuai.com/path-to-regexp/download/path-to-regexp-0.1.12.tgz}
 
+  pathe@2.0.3:
+    resolution: {integrity: sha1-PsvsVUIWhbcKnahyss/z4cvtFxY=, tarball: http://r.npm.sankuai.com/pathe/download/pathe-2.0.3.tgz}
+
+  perfect-debounce@2.1.0:
+    resolution: {integrity: sha1-5weOOPIxyxkYVcMTakQjrvcl0mE=, tarball: http://r.npm.sankuai.com/perfect-debounce/download/perfect-debounce-2.1.0.tgz}
+
   picocolors@1.1.1:
     resolution: {integrity: sha1-PTIa8+q5ObCDyPkpodEs2oHCa2s=, tarball: http://r.npm.sankuai.com/picocolors/download/picocolors-1.1.1.tgz}
 
@@ -2042,6 +2143,12 @@ packages:
   pkg-dir@4.2.0:
     resolution: {integrity: sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM=, tarball: http://r.npm.sankuai.com/pkg-dir/download/pkg-dir-4.2.0.tgz}
     engines: {node: '>=8'}
+
+  pkg-types@1.3.1:
+    resolution: {integrity: sha1-vXzHCIEZJ3fu9TJsGd60bokJF98=, tarball: http://r.npm.sankuai.com/pkg-types/download/pkg-types-1.3.1.tgz}
+
+  pkg-types@2.3.0:
+    resolution: {integrity: sha1-A38sGb1UApZv9oEOMnBlWMtbVyY=, tarball: http://r.npm.sankuai.com/pkg-types/download/pkg-types-2.3.0.tgz}
 
   pkijs@3.3.3:
     resolution: {integrity: sha1-s/BNey6qywXIFnX4gr43TlkWJuw=, tarball: http://r.npm.sankuai.com/pkijs/download/pkijs-3.3.3.tgz}
@@ -2072,9 +2179,15 @@ packages:
     resolution: {integrity: sha1-hLDepKXWcCSaqYAFEYBO4LfCgJw=, tarball: http://r.npm.sankuai.com/pvutils/download/pvutils-1.1.5.tgz}
     engines: {node: '>=16.0.0'}
 
+  qiankun@2.10.16:
+    resolution: {integrity: sha1-RqfuaSWOwM4qGQ3VSGg8ynG3dno=, tarball: http://r.npm.sankuai.com/qiankun/download/qiankun-2.10.16.tgz}
+
   qs@6.14.2:
     resolution: {integrity: sha1-tWNM+dmtmJjjH7o1BOhm6O+2eYw=, tarball: http://r.npm.sankuai.com/qs/download/qs-6.14.2.tgz}
     engines: {node: '>=0.6'}
+
+  quansync@0.2.11:
+    resolution: {integrity: sha1-+cOt2i4ScuT4zz8UV7BMvbTuaSo=, tarball: http://r.npm.sankuai.com/quansync/download/quansync-0.2.11.tgz}
 
   randombytes@2.1.0:
     resolution: {integrity: sha1-32+ENy8CcNxlzfYpE0mrekc9Tyo=, tarball: http://r.npm.sankuai.com/randombytes/download/randombytes-2.1.0.tgz}
@@ -2097,6 +2210,10 @@ packages:
   readdirp@3.6.0:
     resolution: {integrity: sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=, tarball: http://r.npm.sankuai.com/readdirp/download/readdirp-3.6.0.tgz}
     engines: {node: '>=8.10.0'}
+
+  readdirp@5.0.0:
+    resolution: {integrity: sha1-+/H3GnJ4kdaFuxeG+bp0CE9uL5E=, tarball: http://r.npm.sankuai.com/readdirp/download/readdirp-5.0.0.tgz}
+    engines: {node: '>= 20.19.0'}
 
   rechoir@0.8.0:
     resolution: {integrity: sha1-Sfhm4NMhRhQto62PDv81KzIV/yI=, tarball: http://r.npm.sankuai.com/rechoir/download/rechoir-0.8.0.tgz}
@@ -2180,6 +2297,9 @@ packages:
     resolution: {integrity: sha1-WxhQkS+jHfkHFpY9RdkSH9/An0Y=, tarball: http://r.npm.sankuai.com/schema-utils/download/schema-utils-4.3.3.tgz}
     engines: {node: '>= 10.13.0'}
 
+  scule@1.3.0:
+    resolution: {integrity: sha1-bvvSL9C7gBvcxYXIkman0tqo+9M=, tarball: http://r.npm.sankuai.com/scule/download/scule-1.3.0.tgz}
+
   select-hose@2.0.0:
     resolution: {integrity: sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=, tarball: http://r.npm.sankuai.com/select-hose/download/select-hose-2.0.0.tgz}
 
@@ -2240,6 +2360,9 @@ packages:
   side-channel@1.1.0:
     resolution: {integrity: sha1-w/z/nE2pMnhIczNeyXZfqU/2a8k=, tarball: http://r.npm.sankuai.com/side-channel/download/side-channel-1.1.0.tgz}
     engines: {node: '>= 0.4'}
+
+  single-spa@5.9.5:
+    resolution: {integrity: sha1-9Hs8kbAJ68OyJN0Qhu8rLaxSQ3M=, tarball: http://r.npm.sankuai.com/single-spa/download/single-spa-5.9.5.tgz}
 
   sockjs@0.3.24:
     resolution: {integrity: sha1-ybyJlfM6ERvqA5XsMKoyBr21zM4=, tarball: http://r.npm.sankuai.com/sockjs/download/sockjs-0.3.24.tgz}
@@ -2330,6 +2453,10 @@ packages:
   thunky@1.1.0:
     resolution: {integrity: sha1-Wrr3FKlAXbBQRzK7zNLO3Z75U30=, tarball: http://r.npm.sankuai.com/thunky/download/thunky-1.1.0.tgz}
 
+  tinyglobby@0.2.15:
+    resolution: {integrity: sha1-4ijdHmOM6pk9L9tPzS1GAqeZUcI=, tarball: http://r.npm.sankuai.com/tinyglobby/download/tinyglobby-0.2.15.tgz}
+    engines: {node: '>=12.0.0'}
+
   to-regex-range@5.0.1:
     resolution: {integrity: sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=, tarball: http://r.npm.sankuai.com/to-regex-range/download/to-regex-range-5.0.1.tgz}
     engines: {node: '>=8.0'}
@@ -2363,6 +2490,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  ufo@1.6.3:
+    resolution: {integrity: sha1-eZZm5OiMEiqWWYBeMLncBxw67U8=, tarball: http://r.npm.sankuai.com/ufo/download/ufo-1.6.3.tgz}
+
   undici-types@7.18.2:
     resolution: {integrity: sha1-KTV6iee3ykrvO/D9P9DNc4hCKek=, tarball: http://r.npm.sankuai.com/undici-types/download/undici-types-7.18.2.tgz}
 
@@ -2385,6 +2515,14 @@ packages:
   unpipe@1.0.0:
     resolution: {integrity: sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=, tarball: http://r.npm.sankuai.com/unpipe/download/unpipe-1.0.0.tgz}
     engines: {node: '>= 0.8'}
+
+  unplugin-utils@0.3.1:
+    resolution: {integrity: sha1-7yhzZwpqKiG9LJ0xMHJXzIY6cJw=, tarball: http://r.npm.sankuai.com/unplugin-utils/download/unplugin-utils-0.3.1.tgz}
+    engines: {node: '>=20.19.0'}
+
+  unplugin@3.0.0:
+    resolution: {integrity: sha1-AeQMR0v3TTY3RPTLJiVp0m3Zu0M=, tarball: http://r.npm.sankuai.com/unplugin/download/unplugin-3.0.0.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
 
   update-browserslist-db@1.2.3:
     resolution: {integrity: sha1-ZNdttYcTE2rL60xJEUNmzGzC6A0=, tarball: http://r.npm.sankuai.com/update-browserslist-db/download/update-browserslist-db-1.2.3.tgz}
@@ -2423,6 +2561,21 @@ packages:
       '@vue/compiler-sfc':
         optional: true
       vue:
+        optional: true
+
+  vue-router@5.0.3:
+    resolution: {integrity: sha1-3g+sILJd+jard0dqvpRLn4aEBiE=, tarball: http://r.npm.sankuai.com/vue-router/download/vue-router-5.0.3.tgz}
+    peerDependencies:
+      '@pinia/colada': '>=0.21.2'
+      '@vue/compiler-sfc': ^3.5.17
+      pinia: ^3.0.4
+      vue: ^3.5.0
+    peerDependenciesMeta:
+      '@pinia/colada':
+        optional: true
+      '@vue/compiler-sfc':
+        optional: true
+      pinia:
         optional: true
 
   vue@3.2.13:
@@ -2486,6 +2639,9 @@ packages:
     resolution: {integrity: sha1-ozi5XrSE7MdfuxlsvoookGGLSJE=, tarball: http://r.npm.sankuai.com/webpack-sources/download/webpack-sources-3.3.4.tgz}
     engines: {node: '>=10.13.0'}
 
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha1-BX+qkGXIrPSPJMtXrA53c5q5p+g=, tarball: http://r.npm.sankuai.com/webpack-virtual-modules/download/webpack-virtual-modules-0.6.2.tgz}
+
   webpack@5.85.1:
     resolution: {integrity: sha1-13QGNS+PFOyEfFTk3PuAsox3az8=, tarball: http://r.npm.sankuai.com/webpack/download/webpack-5.85.1.tgz}
     engines: {node: '>=10.13.0'}
@@ -2530,6 +2686,11 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha1-27fa+b/YusmrRev2ArjLrQ1dCP0=, tarball: http://r.npm.sankuai.com/yallist/download/yallist-3.1.1.tgz}
+
+  yaml@2.8.2:
+    resolution: {integrity: sha1-VpTyXsoM6cPnqdngDODdq72eNcU=, tarball: http://r.npm.sankuai.com/yaml/download/yaml-2.8.2.tgz}
+    engines: {node: '>= 14.6'}
+    hasBin: true
 
 snapshots:
 
@@ -3273,6 +3434,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@babel/runtime@7.28.6': {}
+
   '@babel/template@7.28.6':
     dependencies:
       '@babel/code-frame': 7.29.0
@@ -3301,6 +3464,11 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/trace-mapping': 0.3.31
+
+  '@jridgewell/remapping@2.3.5':
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/resolve-uri@3.1.2': {}
@@ -3735,6 +3903,16 @@ snapshots:
     dependencies:
       '@types/node': 25.3.3
 
+  '@vue-macros/common@3.1.2(vue@3.2.13)':
+    dependencies:
+      '@vue/compiler-sfc': 3.5.29
+      ast-kit: 2.2.0
+      local-pkg: 1.1.2
+      magic-string-ast: 1.0.3
+      unplugin-utils: 0.3.1
+    optionalDependencies:
+      vue: 3.2.13
+
   '@vue/compiler-core@3.2.13':
     dependencies:
       '@babel/parser': 7.29.0
@@ -3742,10 +3920,23 @@ snapshots:
       estree-walker: 2.0.2
       source-map: 0.6.1
 
+  '@vue/compiler-core@3.5.29':
+    dependencies:
+      '@babel/parser': 7.29.0
+      '@vue/shared': 3.5.29
+      entities: 7.0.1
+      estree-walker: 2.0.2
+      source-map-js: 1.2.1
+
   '@vue/compiler-dom@3.2.13':
     dependencies:
       '@vue/compiler-core': 3.2.13
       '@vue/shared': 3.2.13
+
+  '@vue/compiler-dom@3.5.29':
+    dependencies:
+      '@vue/compiler-core': 3.5.29
+      '@vue/shared': 3.5.29
 
   '@vue/compiler-sfc@3.2.13':
     dependencies:
@@ -3760,10 +3951,40 @@ snapshots:
       postcss: 8.5.6
       source-map: 0.6.1
 
+  '@vue/compiler-sfc@3.5.29':
+    dependencies:
+      '@babel/parser': 7.29.0
+      '@vue/compiler-core': 3.5.29
+      '@vue/compiler-dom': 3.5.29
+      '@vue/compiler-ssr': 3.5.29
+      '@vue/shared': 3.5.29
+      estree-walker: 2.0.2
+      magic-string: 0.30.21
+      postcss: 8.5.6
+      source-map-js: 1.2.1
+
   '@vue/compiler-ssr@3.2.13':
     dependencies:
       '@vue/compiler-dom': 3.2.13
       '@vue/shared': 3.2.13
+
+  '@vue/compiler-ssr@3.5.29':
+    dependencies:
+      '@vue/compiler-dom': 3.5.29
+      '@vue/shared': 3.5.29
+
+  '@vue/devtools-api@8.0.6':
+    dependencies:
+      '@vue/devtools-kit': 8.0.7
+
+  '@vue/devtools-kit@8.0.7':
+    dependencies:
+      '@vue/devtools-shared': 8.0.7
+      birpc: 2.9.0
+      hookable: 5.5.3
+      perfect-debounce: 2.1.0
+
+  '@vue/devtools-shared@8.0.7': {}
 
   '@vue/reactivity@3.2.13':
     dependencies:
@@ -3795,6 +4016,8 @@ snapshots:
       vue: 3.2.13
 
   '@vue/shared@3.2.13': {}
+
+  '@vue/shared@3.5.29': {}
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -3952,6 +4175,16 @@ snapshots:
       pvutils: 1.1.5
       tslib: 2.8.1
 
+  ast-kit@2.2.0:
+    dependencies:
+      '@babel/parser': 7.29.0
+      pathe: 2.0.3
+
+  ast-walker-scope@0.8.3:
+    dependencies:
+      '@babel/parser': 7.29.0
+      ast-kit: 2.2.0
+
   babel-loader@9.1.2(@babel/core@7.22.5)(webpack@5.85.1):
     dependencies:
       '@babel/core': 7.22.5
@@ -3988,6 +4221,8 @@ snapshots:
   batch@0.6.1: {}
 
   binary-extensions@2.3.0: {}
+
+  birpc@2.9.0: {}
 
   body-parser@1.20.4:
     dependencies:
@@ -4067,6 +4302,10 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  chokidar@5.0.0:
+    dependencies:
+      readdirp: 5.0.0
+
   chrome-trace-event@1.0.4: {}
 
   clean-css@5.3.3:
@@ -4108,6 +4347,10 @@ snapshots:
       on-headers: 1.1.0
       safe-buffer: 5.2.1
       vary: 1.1.2
+
+  confbox@0.1.8: {}
+
+  confbox@0.2.4: {}
 
   connect-history-api-fallback@2.0.0: {}
 
@@ -4222,6 +4465,8 @@ snapshots:
 
   entities@2.2.0: {}
 
+  entities@7.0.1: {}
+
   envinfo@7.21.0: {}
 
   es-define-property@1.0.1: {}
@@ -4294,6 +4539,8 @@ snapshots:
       type-is: 1.6.18
       utils-merge: 1.0.1
       vary: 1.1.2
+
+  exsolve@1.0.8: {}
 
   fast-deep-equal@3.1.3: {}
 
@@ -4397,6 +4644,8 @@ snapshots:
 
   he@1.2.0: {}
 
+  hookable@5.5.3: {}
+
   hpack.js@2.1.6:
     dependencies:
       inherits: 2.0.4
@@ -4476,6 +4725,10 @@ snapshots:
   iconv-lite@0.4.24:
     dependencies:
       safer-buffer: 2.1.2
+
+  import-html-entry@1.17.0:
+    dependencies:
+      '@babel/runtime': 7.28.6
 
   import-local@3.2.0:
     dependencies:
@@ -4561,6 +4814,12 @@ snapshots:
 
   loader-runner@4.3.1: {}
 
+  local-pkg@1.1.2:
+    dependencies:
+      mlly: 1.8.0
+      pkg-types: 2.3.0
+      quansync: 0.2.11
+
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -4576,6 +4835,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  magic-string-ast@1.0.3:
+    dependencies:
+      magic-string: 0.30.21
 
   magic-string@0.25.9:
     dependencies:
@@ -4637,9 +4900,18 @@ snapshots:
 
   minimalistic-assert@1.0.1: {}
 
+  mlly@1.8.0:
+    dependencies:
+      acorn: 8.16.0
+      pathe: 2.0.3
+      pkg-types: 1.3.1
+      ufo: 1.6.3
+
   ms@2.0.0: {}
 
   ms@2.1.3: {}
+
+  muggle-string@0.4.1: {}
 
   multicast-dns@7.2.5:
     dependencies:
@@ -4720,6 +4992,10 @@ snapshots:
 
   path-to-regexp@0.1.12: {}
 
+  pathe@2.0.3: {}
+
+  perfect-debounce@2.1.0: {}
+
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
@@ -4729,6 +5005,18 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  pkg-types@1.3.1:
+    dependencies:
+      confbox: 0.1.8
+      mlly: 1.8.0
+      pathe: 2.0.3
+
+  pkg-types@2.3.0:
+    dependencies:
+      confbox: 0.2.4
+      exsolve: 1.0.8
+      pathe: 2.0.3
 
   pkijs@3.3.3:
     dependencies:
@@ -4765,9 +5053,18 @@ snapshots:
 
   pvutils@1.1.5: {}
 
+  qiankun@2.10.16:
+    dependencies:
+      '@babel/runtime': 7.28.6
+      import-html-entry: 1.17.0
+      lodash: 4.17.23
+      single-spa: 5.9.5
+
   qs@6.14.2:
     dependencies:
       side-channel: 1.1.0
+
+  quansync@0.2.11: {}
 
   randombytes@2.1.0:
     dependencies:
@@ -4801,6 +5098,8 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
+
+  readdirp@5.0.0: {}
 
   rechoir@0.8.0:
     dependencies:
@@ -4909,6 +5208,8 @@ snapshots:
       ajv-formats: 2.1.1
       ajv-keywords: 5.1.0(ajv@8.18.0)
 
+  scule@1.3.0: {}
+
   select-hose@2.0.0: {}
 
   selfsigned@5.5.0:
@@ -4996,6 +5297,8 @@ snapshots:
       side-channel-list: 1.0.0
       side-channel-map: 1.0.1
       side-channel-weakmap: 1.0.2
+
+  single-spa@5.9.5: {}
 
   sockjs@0.3.24:
     dependencies:
@@ -5085,6 +5388,11 @@ snapshots:
 
   thunky@1.1.0: {}
 
+  tinyglobby@0.2.15:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
+
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
@@ -5110,6 +5418,8 @@ snapshots:
 
   typescript@5.9.3: {}
 
+  ufo@1.6.3: {}
+
   undici-types@7.18.2: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
@@ -5124,6 +5434,17 @@ snapshots:
   unicode-property-aliases-ecmascript@2.2.0: {}
 
   unpipe@1.0.0: {}
+
+  unplugin-utils@0.3.1:
+    dependencies:
+      pathe: 2.0.3
+      picomatch: 4.0.3
+
+  unplugin@3.0.0:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      picomatch: 4.0.3
+      webpack-virtual-modules: 0.6.2
 
   update-browserslist-db@1.2.3(browserslist@4.28.1):
     dependencies:
@@ -5145,14 +5466,38 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vue-loader@17.2.2(vue@3.2.13)(webpack@5.85.1):
+  vue-loader@17.2.2(@vue/compiler-sfc@3.5.29)(vue@3.2.13)(webpack@5.85.1):
     dependencies:
       chalk: 4.1.2
       hash-sum: 2.0.0
       watchpack: 2.5.1
       webpack: 5.85.1(webpack-cli@5.1.3)
     optionalDependencies:
+      '@vue/compiler-sfc': 3.5.29
       vue: 3.2.13
+
+  vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(vue@3.2.13):
+    dependencies:
+      '@babel/generator': 7.29.1
+      '@vue-macros/common': 3.1.2(vue@3.2.13)
+      '@vue/devtools-api': 8.0.6
+      ast-walker-scope: 0.8.3
+      chokidar: 5.0.0
+      json5: 2.2.3
+      local-pkg: 1.1.2
+      magic-string: 0.30.21
+      mlly: 1.8.0
+      muggle-string: 0.4.1
+      pathe: 2.0.3
+      picomatch: 4.0.3
+      scule: 1.3.0
+      tinyglobby: 0.2.15
+      unplugin: 3.0.0
+      unplugin-utils: 0.3.1
+      vue: 3.2.13
+      yaml: 2.8.2
+    optionalDependencies:
+      '@vue/compiler-sfc': 3.5.29
 
   vue@3.2.13:
     dependencies:
@@ -5254,6 +5599,8 @@ snapshots:
 
   webpack-sources@3.3.4: {}
 
+  webpack-virtual-modules@0.6.2: {}
+
   webpack@5.85.1(webpack-cli@5.1.3):
     dependencies:
       '@types/eslint-scope': 3.7.7
@@ -5308,3 +5655,5 @@ snapshots:
       is-wsl: 3.1.1
 
   yallist@3.1.1: {}
+
+  yaml@2.8.2: {}
